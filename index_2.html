@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>表格的冻结列实现</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-table.css">
+    <link rel="stylesheet" href="css/bootstrap-table-fixed-columns.css">
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <script src="js/fix.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>fixed-columns</h1>
+    <table id="table"
+           data-toggle="table"
+           data-pagination="true"
+           data-show-columns="true"
+           data-fixed-columns="true"
+           data-url="data.json">
+        <thead>
+        <tr>
+            <th data-field="id" >ID</th>
+            <th data-field="name" >Item Name</th>
+            <th data-field="price" >Item Price</th>
+            <th data-field="amount" >Amount</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+</body>
+<script>
+    $(table(table));
+</script>
+</html>
